@@ -316,7 +316,7 @@ for n=1:Nt
     
    end
    % -----------------  source excitation
-   %EZ(is,js,ks)=EZ(is,js,ks)-0.5*(dt/e0/dx/dy)*func(n);   
+   %EZ(is,js,ks)=EZ(is,js,ks)-0.5*(dt/e0/epsilon_inf/dx/dy)*func(n);   
    
    
     % --------------- Update magnetic fields (explicitly) 
@@ -503,7 +503,7 @@ for n=1:Nt
     
    end  
    % -----------------  source excitation
-   %EZ(is,js,ks)=EZ(is,js,ks)-0.5*(dt/e0/dx/dy)*func(n);   
+   %EZ(is,js,ks)=EZ(is,js,ks)-0.5*(dt/e0/epsilon_inf/dx/dy)*func(n);   
     
     % --------------- Update magnetic fields (explicitly) 
      %update of HX @ (n+1) - explicit 
